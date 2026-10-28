@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dr0tp5uk3fsd1"]
+
+[ext_resource type="Texture2D" uid="uid://c7qu7tdk6vslr" path="res://assets/IsaacBG.png" id="1_yvikn"]
+[ext_resource type="PackedScene" uid="uid://blp2cdc61jflk" path="res://elements/Player/player_robot.tscn" id="2_frabl"]
+
+[node name="Battle" type="Node2D" unique_id=1459998364]
+
+[node name="Background_Battle" type="Sprite2D" parent="." unique_id=319511434]
+texture_filter = 3
+position = Vector2(960, 540)
+scale = Vector2(2.182, 2)
+texture = ExtResource("1_yvikn")
+region_enabled = true
+region_rect = Rect2(0, 0, 880, 540)
+
+[node name="Player_Robot" parent="." unique_id=315224150 instance=ExtResource("2_frabl")]
+position = Vector2(417, 503)

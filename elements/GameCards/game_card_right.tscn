@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c8w1b6jk878lj"]
+
+[ext_resource type="Texture2D" uid="uid://btiilg6jqlf7q" path="res://assets/king_of_hearts.png" id="1_8070y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tlgc2"]
+radius = 150.0
+height = 408.0
+
+[node name="GameCard_Right" type="CharacterBody2D" unique_id=1962090840]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=626523333]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_8070y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=965355991]
+shape = SubResource("CapsuleShape2D_tlgc2")

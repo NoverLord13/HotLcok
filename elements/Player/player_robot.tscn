@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://blp2cdc61jflk"]
+
+[ext_resource type="Texture2D" uid="uid://b0e82c8udcekx" path="res://assets/robot.png" id="1_pqsyq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tlgc2"]
+radius = 35.0
+height = 114.0
+
+[node name="Player_Robot" type="CharacterBody2D" unique_id=315224150]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1724190313]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_pqsyq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1802009005]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_tlgc2")
