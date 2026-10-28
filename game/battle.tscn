@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://c7qu7tdk6vslr" path="res://assets/IsaacBG.png" id="1_yvikn"]
 [ext_resource type="PackedScene" uid="uid://blp2cdc61jflk" path="res://elements/Player/player_robot.tscn" id="2_frabl"]
+[ext_resource type="PackedScene" uid="uid://cucnnd5r1oxgb" path="res://elements/InvisWall/invis_wall_vertical.tscn" id="3_638qj"]
+[ext_resource type="PackedScene" uid="uid://je1fk8evo7t3" path="res://elements/InvisWall/invis_wall_horizontal.tscn" id="4_x1pb1"]
 
 [node name="Battle" type="Node2D" unique_id=1459998364]
 
@@ -15,3 +17,15 @@ region_rect = Rect2(0, 0, 880, 540)
 
 [node name="Player_Robot" parent="." unique_id=315224150 instance=ExtResource("2_frabl")]
 position = Vector2(417, 503)
+
+[node name="InvisWall_vertical" parent="." unique_id=1047879406 instance=ExtResource("3_638qj")]
+position = Vector2(0, 540)
+
+[node name="InvisWall_vertical2" parent="." unique_id=1622488747 instance=ExtResource("3_638qj")]
+position = Vector2(1920, 540)
+
+[node name="InvisWall_horizontal" parent="." unique_id=1024496665 instance=ExtResource("4_x1pb1")]
+position = Vector2(960, 0)
+
+[node name="InvisWall_horizontal2" parent="." unique_id=77253287 instance=ExtResource("4_x1pb1")]
+position = Vector2(960, 1080)
