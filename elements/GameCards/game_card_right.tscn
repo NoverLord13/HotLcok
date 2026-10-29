@@ -7,6 +7,7 @@ radius = 150.0
 height = 408.0
 
 [node name="GameCard_Right" type="CharacterBody2D" unique_id=1962090840]
+scale = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=626523333]
 scale = Vector2(0.6, 0.6)

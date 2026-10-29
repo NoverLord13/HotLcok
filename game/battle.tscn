@@ -4,8 +4,16 @@
 [ext_resource type="PackedScene" uid="uid://blp2cdc61jflk" path="res://elements/Player/player_robot.tscn" id="2_frabl"]
 [ext_resource type="PackedScene" uid="uid://cucnnd5r1oxgb" path="res://elements/InvisWall/invis_wall_vertical.tscn" id="3_638qj"]
 [ext_resource type="PackedScene" uid="uid://je1fk8evo7t3" path="res://elements/InvisWall/invis_wall_horizontal.tscn" id="4_x1pb1"]
+[ext_resource type="PackedScene" uid="uid://c8w1b6jk878lj" path="res://elements/GameCards/game_card_right.tscn" id="5_druhn"]
+
+[sub_resource type="TileSet" id="TileSet_tlgc2"]
+tile_size = Vector2i(100, 100)
 
 [node name="Battle" type="Node2D" unique_id=1459998364]
+
+[node name="TileMap" type="TileMap" parent="." unique_id=2089162156]
+tile_set = SubResource("TileSet_tlgc2")
+format = 2
 
 [node name="Background_Battle" type="Sprite2D" parent="." unique_id=319511434]
 texture_filter = 3
@@ -16,7 +24,7 @@ region_enabled = true
 region_rect = Rect2(0, 0, 880, 540)
 
 [node name="Player_Robot" parent="." unique_id=315224150 instance=ExtResource("2_frabl")]
-position = Vector2(417, 503)
+position = Vector2(355, 452)
 
 [node name="InvisWall_vertical" parent="." unique_id=1047879406 instance=ExtResource("3_638qj")]
 position = Vector2(0, 540)
@@ -29,3 +37,6 @@ position = Vector2(960, 0)
 
 [node name="InvisWall_horizontal2" parent="." unique_id=77253287 instance=ExtResource("4_x1pb1")]
 position = Vector2(960, 1080)
+
+[node name="GameCard_Right" parent="." unique_id=1962090840 instance=ExtResource("5_druhn")]
+position = Vector2(1136, 893)
