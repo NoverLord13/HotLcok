@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bedj8p2lf4ymc"]
+
+[ext_resource type="Script" uid="uid://jxq77f5issb8" path="res://elements/GameCards/card_data.gd" id="1_upl1l"]
+[ext_resource type="Texture2D" uid="uid://c24yriyqjskd0" path="res://assets/cards/move_up_t.png" id="1_xet72"]
+
+[resource]
+script = ExtResource("1_upl1l")
+card_name = "Шаг наверх"
+description = "Вы делаете 1 шаг наверх"
+card_action = Vector2i(0, -1)
+card_texture = ExtResource("1_xet72")
+metadata/_custom_type_script = "uid://jxq77f5issb8"

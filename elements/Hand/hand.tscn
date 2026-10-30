@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://fv15u6uj6b4m"]
+
+[ext_resource type="Script" uid="uid://dc21b6q7aqq2q" path="res://elements/Hand/hand.gd" id="1_sf8sp"]
+[ext_resource type="PackedScene" uid="uid://cuop0caf0gk2g" path="res://elements/GameCards/game_card_ui.tscn" id="2_fvmmr"]
+[ext_resource type="Resource" uid="uid://do5yl3drc78cy" path="res://elements/GameCards/move_left.tres" id="3_esime"]
+[ext_resource type="Resource" uid="uid://dm4cnntskcqx4" path="res://elements/GameCards/move_right.tres" id="4_fqcob"]
+[ext_resource type="Resource" uid="uid://bedj8p2lf4ymc" path="res://elements/GameCards/move_up.tres" id="5_rft2h"]
+[ext_resource type="Resource" uid="uid://cg2xchu8opeyy" path="res://elements/GameCards/move_down.tres" id="6_pnwwo"]
+
+[node name="Hand" type="Control" unique_id=45581805 node_paths=PackedStringArray("container")]
+layout_mode = 3
+anchor_top = 0.781
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -0.4800415
+grow_horizontal = 2
+grow_vertical = 0
+offset_transform_enabled = true
+script = ExtResource("1_sf8sp")
+card_scene = ExtResource("2_fvmmr")
+container = NodePath("HBoxContainer")
+starting_deck = Array[Resource]([ExtResource("3_esime"), ExtResource("3_esime"), ExtResource("4_fqcob"), ExtResource("4_fqcob"), ExtResource("5_rft2h"), ExtResource("6_pnwwo")])
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=620649151]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+theme_override_constants/separation = 15
+alignment = 1

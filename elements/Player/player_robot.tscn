@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://blp2cdc61jflk"]
 
 [ext_resource type="Texture2D" uid="uid://b0e82c8udcekx" path="res://assets/robot.png" id="1_eyxm0"]
+[ext_resource type="Script" uid="uid://b4q2f5g8o0m7l" path="res://elements/Player/player_robot.gd" id="1_uj41d"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tlgc2"]
 radius = 28.0
 height = 96.0
 
 [node name="Player_Robot" type="CharacterBody2D" unique_id=315224150]
+script = ExtResource("1_uj41d")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1724190313]
 scale = Vector2(0.4, 0.4)

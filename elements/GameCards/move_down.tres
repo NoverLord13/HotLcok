@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://cg2xchu8opeyy"]
+
+[ext_resource type="Texture2D" uid="uid://dxoq5c1hl6u3j" path="res://assets/cards/move_down_t.png" id="1_gb0rv"]
+[ext_resource type="Script" uid="uid://jxq77f5issb8" path="res://elements/GameCards/card_data.gd" id="1_qekhd"]
+
+[resource]
+script = ExtResource("1_qekhd")
+card_name = "Шаг вниз"
+description = "Вы делаете 1 шаг вниз"
+card_action = Vector2i(0, 1)
+card_texture = ExtResource("1_gb0rv")
+metadata/_custom_type_script = "uid://jxq77f5issb8"
