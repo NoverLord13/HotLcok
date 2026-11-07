@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://d3hidhm8jlx1x"]
+
+[ext_resource type="Texture2D" uid="uid://rmtkydsytjx2" path="res://assets/cards/attack_down_t.png" id="1_jd4tx"]
+[ext_resource type="Script" uid="uid://jxq77f5issb8" path="res://elements/GameCards/card_data.gd" id="1_jqgdn"]
+
+[resource]
+script = ExtResource("1_jqgdn")
+card_name = "Атака снизу"
+description = "Атакует противника снизу"
+card_type = 1
+card_action = Vector2i(0, 1)
+card_texture = ExtResource("1_jd4tx")
+metadata/_custom_type_script = "uid://jxq77f5issb8"

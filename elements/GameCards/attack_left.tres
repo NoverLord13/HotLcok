@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://b07lshuwlkcen"]
+
+[ext_resource type="Texture2D" uid="uid://bg688phefthqd" path="res://assets/cards/attack_left_t.png" id="1_ddpav"]
+[ext_resource type="Script" uid="uid://jxq77f5issb8" path="res://elements/GameCards/card_data.gd" id="1_h61c6"]
+
+[resource]
+script = ExtResource("1_h61c6")
+card_name = "Атака налево"
+description = "Атакует противника слева"
+card_type = 1
+card_action = Vector2i(-1, 0)
+card_texture = ExtResource("1_ddpav")
+metadata/_custom_type_script = "uid://jxq77f5issb8"

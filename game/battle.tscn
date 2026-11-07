@@ -6,16 +6,16 @@
 [ext_resource type="PackedScene" uid="uid://cucnnd5r1oxgb" path="res://elements/InvisWall/invis_wall_vertical.tscn" id="3_638qj"]
 [ext_resource type="PackedScene" uid="uid://je1fk8evo7t3" path="res://elements/InvisWall/invis_wall_horizontal.tscn" id="4_x1pb1"]
 [ext_resource type="PackedScene" uid="uid://fv15u6uj6b4m" path="res://elements/Hand/hand.tscn" id="5_druhn"]
+[ext_resource type="PackedScene" uid="uid://bjbbapveicqde" path="res://elements/Enemy/enemy_robot.tscn" id="7_4wyx4"]
 
-[sub_resource type="TileSet" id="TileSet_tlgc2"]
+[sub_resource type="TileSet" id="TileSet_uj41d"]
 tile_size = Vector2i(100, 100)
 
 [node name="Battle" type="Node2D" unique_id=1459998364]
 script = ExtResource("1_jjhyf")
 
-[node name="TileMap" type="TileMap" parent="." unique_id=2089162156]
-tile_set = SubResource("TileSet_tlgc2")
-format = 2
+[node name="Grid_Layer" type="TileMapLayer" parent="." unique_id=391883082]
+tile_set = SubResource("TileSet_uj41d")
 
 [node name="Background_Battle" type="Sprite2D" parent="." unique_id=319511434]
 texture_filter = 3
@@ -25,9 +25,9 @@ texture = ExtResource("1_yvikn")
 region_enabled = true
 region_rect = Rect2(0, 0, 880, 540)
 
-[node name="Player_Robot" parent="." unique_id=315224150 node_paths=PackedStringArray("tile_map") instance=ExtResource("2_frabl")]
+[node name="Player_Robot" parent="." unique_id=315224150 node_paths=PackedStringArray("grid_layer") instance=ExtResource("2_frabl")]
 position = Vector2(355, 452)
-tile_map = NodePath("../TileMap")
+grid_layer = NodePath("../Grid_Layer")
 
 [node name="InvisWall_vertical" parent="." unique_id=1047879406 instance=ExtResource("3_638qj")]
 position = Vector2(0, 540)
@@ -45,3 +45,21 @@ position = Vector2(960, 1080)
 offset_top = 843.0
 offset_right = 1920.0
 offset_bottom = 1080.0
+
+[node name="Enemy_Robot" parent="." unique_id=1434714304 node_paths=PackedStringArray("grid_layer") instance=ExtResource("7_4wyx4")]
+position = Vector2(1393, 310)
+grid_layer = NodePath("../Grid_Layer")
+
+[node name="Enemy_Robot2" parent="." unique_id=1857315337 node_paths=PackedStringArray("grid_layer") instance=ExtResource("7_4wyx4")]
+position = Vector2(453, 449)
+grid_layer = NodePath("../Grid_Layer")
+
+[node name="Turn_end_button" type="Button" parent="." unique_id=2064252070]
+offset_left = 1572.0
+offset_top = 883.0
+offset_right = 1831.0
+offset_bottom = 987.0
+theme_override_font_sizes/font_size = 32
+text = "Закончить ход"
+
+[connection signal="pressed" from="Turn_end_button" to="." method="_on_turn_end_button_pressed"]

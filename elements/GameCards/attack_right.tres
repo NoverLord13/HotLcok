@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://nulo4q6ulomv"]
+
+[ext_resource type="Texture2D" uid="uid://dbccrwqjevp42" path="res://assets/cards/attack_right_t.png" id="1_6vdfv"]
+[ext_resource type="Script" uid="uid://jxq77f5issb8" path="res://elements/GameCards/card_data.gd" id="1_kowis"]
+
+[resource]
+script = ExtResource("1_kowis")
+card_name = "Атака направо"
+description = "Атакует противника справа"
+card_type = 1
+card_action = Vector2i(1, 0)
+card_texture = ExtResource("1_6vdfv")
+metadata/_custom_type_script = "uid://jxq77f5issb8"

@@ -6,6 +6,10 @@
 [ext_resource type="Resource" uid="uid://dm4cnntskcqx4" path="res://elements/GameCards/move_right.tres" id="4_fqcob"]
 [ext_resource type="Resource" uid="uid://bedj8p2lf4ymc" path="res://elements/GameCards/move_up.tres" id="5_rft2h"]
 [ext_resource type="Resource" uid="uid://cg2xchu8opeyy" path="res://elements/GameCards/move_down.tres" id="6_pnwwo"]
+[ext_resource type="Resource" uid="uid://nulo4q6ulomv" path="res://elements/GameCards/attack_right.tres" id="7_esime"]
+[ext_resource type="Resource" uid="uid://b7fhcud457fiy" path="res://elements/GameCards/attack_up.tres" id="8_pnwwo"]
+[ext_resource type="Resource" uid="uid://b07lshuwlkcen" path="res://elements/GameCards/attack_left.tres" id="9_gsrc0"]
+[ext_resource type="Resource" uid="uid://d3hidhm8jlx1x" path="res://elements/GameCards/attack_down.tres" id="10_t0qyx"]
 
 [node name="Hand" type="Control" unique_id=45581805 node_paths=PackedStringArray("container")]
 layout_mode = 3
@@ -19,7 +23,7 @@ offset_transform_enabled = true
 script = ExtResource("1_sf8sp")
 card_scene = ExtResource("2_fvmmr")
 container = NodePath("HBoxContainer")
-starting_deck = Array[Resource]([ExtResource("3_esime"), ExtResource("3_esime"), ExtResource("4_fqcob"), ExtResource("4_fqcob"), ExtResource("5_rft2h"), ExtResource("6_pnwwo")])
+starting_deck = Array[Resource]([ExtResource("3_esime"), ExtResource("3_esime"), ExtResource("4_fqcob"), ExtResource("5_rft2h"), ExtResource("6_pnwwo"), ExtResource("7_esime"), ExtResource("8_pnwwo"), ExtResource("7_esime"), ExtResource("9_gsrc0"), ExtResource("10_t0qyx"), ExtResource("8_pnwwo"), ExtResource("4_fqcob")])
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=620649151]
 layout_mode = 1

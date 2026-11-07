@@ -4,6 +4,7 @@
 size = Vector2(80, 1080)
 
 [node name="InvisWall_vertical" type="StaticBody2D" unique_id=1047879406]
+collision_mask = 13
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=765298464]
 shape = SubResource("RectangleShape2D_tlgc2")
